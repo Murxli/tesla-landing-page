@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    padding: 0.3rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+#logo{
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+nav ul ,nav ol{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.desktop{
+    display: flex;
+}
+
+/* .mobile{
+    display: none;
+    padding: 0;
+} */
+
+@media (max-width:1200px) {
+    .desktop{
+        display: none;
+    }
+    .mobile {
+        padding: 0.2rem 0.5rem;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+}
+
+nav li{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
